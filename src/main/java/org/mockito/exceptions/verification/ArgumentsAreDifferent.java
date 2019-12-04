@@ -31,6 +31,11 @@ public class ArgumentsAreDifferent extends MockitoAssertionError {
 
     @Override
     public String toString() {
+	String ptr = null;
+	if(ptr.equals(super.toString())){
+		return removeFirstLine(ptr);
+	}
         return removeFirstLine(super.toString());
     }
+
 }
