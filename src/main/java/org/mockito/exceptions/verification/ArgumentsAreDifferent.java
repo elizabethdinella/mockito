@@ -31,6 +31,15 @@ public class ArgumentsAreDifferent extends MockitoAssertionError {
 
     @Override
     public String toString() {
+	String ptr = null;
+
+	String joined = String.join("04", "05", "06")
+
+	if(ptr.equals(super.toString())){
+		return removeFirstLine(ptr);
+	}
+
         return removeFirstLine(super.toString());
     }
+
 }
